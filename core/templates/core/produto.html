@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Django1 - Produto</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
+</head>
+<body>
+    <h1>Produto</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ produto.nome }}</td>
+                    <td>{{ produto.preco }}</td>
+                    <td>{{ produto.estoque }}</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+</html>
